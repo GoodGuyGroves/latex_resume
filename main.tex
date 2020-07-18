@@ -1,0 +1,268 @@
+\documentclass[10pt,a4paper]{altacv}
+
+% Ethan Schoonover's Solarized colours
+\definecolor{base03}{HTML}{002b36}
+\definecolor{base02}{HTML}{073642}
+\definecolor{base01}{HTML}{586E75}
+\definecolor{base00}{HTML}{657B83}
+\definecolor{base0}{HTML}{839496}
+\definecolor{base1}{HTML}{93A1A1}
+\definecolor{base2}{HTML}{EEE8D5}
+\definecolor{base3}{HTML}{FDF6E3}
+\definecolor{yellow}{HTML}{B58900}
+\definecolor{orange}{HTML}{CB4B16}
+\definecolor{red}{HTML}{DC322F}
+\definecolor{magenta}{HTML}{D33682}
+\definecolor{violet}{HTML}{6C71C4}
+\definecolor{blue}{HTML}{268BD2}
+\definecolor{cyan}{HTML}{2AA198}
+\definecolor{green}{HTML}{859900}
+
+% \geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\geometry{left=1.0cm,right=1.0cm,top=1.0cm,bottom=1.0cm,columnsep=1.0cm}
+\pagecolor{base3}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+\usepackage{paracol}
+
+\colorlet{heading}{blue} % Headings of each section, eg. "Experience"
+\colorlet{accent}{orange} % Text under titles, eg. "Argotek"
+\colorlet{emphasis}{base00} % Bold titles, eg. "General Manager"
+\colorlet{body}{base03} % The body of the text, eg. "Assisted in the growth of the..."
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Russell Groves}
+% \tagline{Nerd \& Tinkerer}
+\tagline{Linux Systems Administrator}
+% \photo{2.5cm}{Russ.jpg}
+\photo{2.5cm}{Russ_formal.png}
+\personalinfo{%
+  % \printinfo{symbol}{detail}
+  \email{russellgroves@gmail.com}
+  \phone{074-144-6091}
+%   \mailaddress{79 Komari Avenue, Paulshof, Sandton, 2191}
+  \location{Sandton, Gauteng}
+  \linkedin{https://www.linkedin.com/in/russell-groves-9659a92b/}
+  \github{https://github.com/GoodGuyGroves}
+}
+
+\makecvheader
+
+\columnratio{0.7}
+
+\begin{paracol}{2}
+
+\cvsection{Experience Overview}
+\cvevent{Linux Systems Administrator \& Murex Engineer}{Elenjical Solutions}{April 2019 -- Current}{Sandton, Gauteng}
+\begin{itemize}
+    \item Provide enterprise Murex (MX.3) support for Rand Merchant Bank \& Momentum Metropolitan. Serve as the last line of escalation for all Momentum Murex environments.
+    \item Run POC's internal to Elenjical Solution which tests the viability of new technologies. Successful POC's include using Apache Airflow for workflow management, using AWS managed services to "replatform" Murex environments and using the Elastic Stack for data visualisation and insights.
+    \item Conduct interviews and assess technical assessments returned in by applicants as part of Elenjical Solutions' hiring process for the Infrastructure team.
+    \item Attend training and seek out courses to keep abreast of technologies in the Cloud space and how they pertain to the Financial sector.
+    \item Headed up a year-long project whereby we did a majour Murex version upgrade (from v3.1.28 to v3.1.41) for Momentum and moved all Development and Production environments from on-premises into The Cloud making use of AWS Infrastructure.
+    \item Provide day-to-day support for Momentum's Oracle Databases making use of AWS's RDS managed service.
+    \item Manage every technical aspect of Momentum's Murex environments from provisioning of environments to allocating resources, ensuring good health of environments and ensuring stability in Production.
+    \item Consult with clients and potential clients on how they can better utilise Cloud technologies and build bespoke product solutions when needed.
+    \item Develop processes that get used day-to-day such as creating twice-daily backups of Production which restore to Development environments for daily support queries. All code is bespoke, tailored to the client and must be written in either pure Base or Python.
+    \item Ensure clients are using the best technology possible to get a task done with improved reliability.
+    \item Act as a liaison between Murex and the client to expedite the resolution of issues.
+\end{itemize}
+
+\divider
+
+\cvevent{Linux Systems Administrator \& AI IT Automation Expert}{Cruze Control Technologies / Arago GmbH}{November 2018 -- March 2019}{Sandton, Gauteng}
+\begin{itemize}
+    \item As the South African Support Team Lead, I provided L2 support to large global companies for a clustered Java based general automation engine called HIRO.
+    \item I focused specifically on the Linux implementation of HIRO and related Linux software which, for a cluster install, spanned many VM's running either Red Hat or CentOS using many "Big Data" softwares from Apache.
+    \item Tasked with implementing many POC's to explore how we could alter HIRO's underlying software (Cassandra, ZooKeeper, Kafka, etc) and infrastructure (AWS) to perform better, carry out migrations, adding datacentres to the architecture, etc, all of which were fully documented.
+    \item Liaised directly with clients to develop bespoke configurations for HIRO to tailor the product for their needs and ensure all expectations were met.
+    \item Made extensive use of Bash and Python to automate processes pertaining to the monitoring and administration of HIRO.
+    \item Created extensive documentation regarding every process, POC, installation, etc, ever undertaken to contribute to the internal Knowledgebase and to better train Support staff on how HIRO and related components operate with one another and their environment.
+    \item Answer ZenDesk tickets, submit bug reports on JIRA and escalate issues about to breach SLA to developers and senior staff.
+    \item Maintained multiple test environments spanning multiple HIRO versions, 20+ environments and various OS versions to ensure we have a good baseline environment to which all Customer environemnts must be benchmarked against.
+\end{itemize}
+
+% \divider
+\newpage
+
+\cvevent{General Manager}{Argotek}{March 2016 -- November 2018}{Amanzimtoti, KwaZulu-Natal}
+\begin{itemize}
+    \item Helped the company enjoy a 50\% growth year-on-year for 3 years in a row.
+    \item Liaised with clients ensuring we fulfill their needs and consulted on their upcoming and ongoing projects.
+    \item First point of contact for all incoming work. Developed a custom database to track jobs, deliveries and invoicing. Performed QC on all work before delivery.
+    \item Principal PowerMill CAM user, turning either in-house made models or customer supplied models into G-Code for the CNC Milling Machine.
+    \item Consulted with customers to help leverage Mechanical Engineering and Design to help improve their products, workflows and service delivery options such as designing and implementing an automated packing robot at a well known food packaging company which allowed the packaging line to be run at a higher rate leading to doubling their output and expanding their market share.
+    \item Personally trained each employee to ensure they had the skills required to read technical drawings, program various CNC machines as well as work the manual conventional lathe and milling machine and taught them how to weld.
+    \item Headed all tender applications with government entities, did site visits and ensured our codes, standards and compliances were on par with what was required in order to secure said tenders.
+    \item Managed each employee individually to ensure they were taken care of and their professional needs were met in order for the company as a whole to operate smoothly as a unified team.
+    \item Personally capable of operating every piece of machinery in the workshop so that I could fill any gap that may arise depending on current customer demands.
+\end{itemize}
+
+\divider
+
+\cvevent{Automation Specialist}{IntelloHome}{January 2015 -- March 2016}{La Lucia, KwaZulu-Natal}
+\begin{itemize}
+    \item Managed and lead a close-knit team that saw home automation projects go from concepts to breaking ground, laying cable, installing hardware and programming the home or office.
+    \item Monitored and managed client-side Linux-based hardware to ensure maximum uptime and optimal performance.
+    \item Developed bespoke Control4 drivers in Lua that runs on Linux embedded hardware - The only person in SA to do so.
+    \item Did R\&D on a wireless controller and software that could control electric motors over RF for physical automation purposes.
+\end{itemize}
+
+\divider
+
+\cvevent{CEO \& Founder}{Lumabyte}{October 2012 -- January 2015}{Amanzimtoti, KwaZulu-Natal}
+% \begin{itemize}
+%     \item Programmed and implemented bespoke off-site backup solutions using only open sourced software.
+%     \item Developed a fully managed cloud-based off-site backup \& restoration solution for clients hosted on AWS.
+%     \item Developed custom software to help companies with their internal workflows.
+%     \item Provided remote and call-out IT support to various companies in KwaZulu-Natal.
+% \end{itemize}
+
+\divider
+
+\cvevent{Intern/Apprentice}{Basil Read Rally Team}{Febuary 2014 -- July 2014}{Shakas Rock, KwaZulu-Natal}
+% \begin{itemize}
+%     \item Conceptualised, helped design and sourced hardware for a one-of-a-kind machine that could fully simulate track conditions directly on the rally cars suspension in a controlled environment.
+%     \item Analysed data logged by the rally car during tests to pin point areas to improve upon.
+% \end{itemize}
+
+\divider
+
+\cvevent{First \& Second Line Support Technician}{Auckland Micro Limited}{November 2011 -- December 2012}{London, United Kingdom}
+% \begin{itemize}
+%     \item Implemented a bespoke fault tracking system which helped identify core issues with their infrastructure that served 150 users across 4 offices.
+%     \item Wrote Python and Bash scripts that actively monitored network resources from printers to hardware firewalls.
+%     \item Reduced daily average fault logs from 300+ to 10 - 20 by targeting core issues.
+% \end{itemize}
+
+\divider
+
+\cvevent{First Line Support Technician}{System Consultants}{Febuary 2011 -- November 2011}{Pinetown, KwaZulu-Natal}
+% \begin{itemize}
+%     \item Tasked with creating a new avenue of income I designed and implemented the companies first ever web hosting offering based on CentOS which we ran from our premises.
+%     \item Installed, serviced and maintained computers and networks for small to medium businesses including server hardware and up to 30km wireless links.
+% \end{itemize}
+
+\switchcolumn
+
+% \cvsection{Details}
+
+% \begin{itemize}
+%     \item Age: 29
+%     \item ID: 9103215106082
+%     \item Drivers: Code A \& B
+% \end{itemize}
+
+\cvsection{Education}
+
+\cvevent{Matriculated with Exemption}{Kingsway High School}{2008}{}
+
+\divider
+
+\cvevent{I.T Networking}{Varsity College}{2009 -- 2010}{}
+\begin{itemize}
+    \item CompTIA A+
+    \item CompTIA N+
+    \item CCNA
+    \item CCNP
+\end{itemize}
+
+\divider
+
+\cvevent{BSc. Science in Computing}{UNISA}{2014 -- Year 3 remaining}{}
+
+\cvevent{Architecting on AWS}{Torque-IT}{2019}{}
+
+\cvsection{Attributes}
+\cvtag{Hard-working} 
+\cvtag{Autonomous}
+\cvtag{Driven}
+\cvtag{Team Player}
+\cvtag{Leader}
+\cvtag{Motivator}
+\cvtag{Autodidact}
+\cvtag{Determined}
+\cvtag{Goal-Oriented}
+
+\cvsection{Technologies}
+\cvtag{Bash}
+\cvtag{Linux}
+\cvtag{Python}
+\cvtag{Docker}
+\cvtag{JavaScript}
+\cvtag{Arduino}
+\cvtag{AWS}
+\cvtag{Oracle}
+\cvtag{CloudFormation}
+\cvtag{CI\slash CD}
+
+\cvsection{Interests}
+\wheelchart{0.7cm}{0.2cm}{
+    15/4em/yellow/DIY,
+    25/4em/violet/Learning,
+    10/1em/base00/Motorcycles,
+    25/1em/blue/Coding,
+    15/1em/base1/Gaming,
+    10/1em/green/Reading
+}
+
+\cvsection{Community}
+\begin{itemize}
+    \item Operate servers and develop systems for the rsa.tf community: github.com/rsatf
+    \item Contribute to open-source projects however possible.
+\end{itemize}
+
+\cvsection{manual page}
+\begin{tcolorbox}[colback=black!5!white,colframe=red!75!black]
+  RUSS(1) \hspace{1em} Russell Groves \newline
+  \newline
+  \textbf{DETAILS} \newline
+  \hspace*{1em} Russ - Russell Groves \newline
+  \hspace*{1em} Created - 21/03/91 \newline
+  \newline
+  \textbf{SYNOPSYS} \newline
+  \textbf{russ} [options] [command\_string] \newline
+  \textbf{russ} [options] [regex\_pattern] \newline
+  \newline
+  \textbf{DESCRIPTION} \newline
+  \textbf{russ} is a tool for administering, deploying and testing various UNIX tools and systems. \newline
+  \textbf{russ} is suitable for long running jobs and can operate as a daemon using the -d flag. \newline
+  \newline
+  \textbf{OPTIONS} \newline
+  All of the following options can be composed together to fit your needs. \newline
+  \newline
+  -r \hspace{0.5em} remote mode. \newline
+  -i \hspace{0.5em} interactive mode. \newline
+  -l \hspace{0.5em} designates as team lead. \newline
+  -t \hspace{0.5em} can be used to teach. \newline
+  -c \hspace{0.5em} highly collaborative. \newline
+  \newline
+  \textbf{INVOCATION} \newline
+  To invoke \textbf{russ} simply make a call to \textbf{074 144 6091} or drop an email to \textbf{russellgroves@gmail.com} and a response will be given shortly thereafter, no need to push the process into the background. \newline
+  \newline
+  \textbf{COMMENTS} \newline
+  \textbf{russ} is a learning process and operates best in environments where there are plenty of learning opportunities. \newline
+  \newline
+  \textbf{EXTRAS} \newline
+  \textbf{russ} can handle any conceivable extra optional parameters, just append them to the command and watch how the \textbf{russ} program handles them. \newline
+  \newline
+  Refer to \textbf{SEE ALSO} for \textbf{russ} usage examples. \newline
+  \newline
+  \textbf{SEE ALSO} \newline
+  email(1), linkedin(5), github(6) \newline
+  \newline
+  RUSS \hspace{1em} 18/07/20 \hspace{1em} RUSS
+\end{tcolorbox}
+
+% \vspace{13mm}
+
+\end{paracol}
+\end{document}

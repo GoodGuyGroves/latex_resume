@@ -1,0 +1,6 @@
+# TeX related files that get created during a build
+*.cls
+*.aux
+*.bcf
+*.log
+*.run.xml
